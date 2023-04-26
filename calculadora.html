@@ -1,48 +1,50 @@
-.calculator-container {
-    width: 500px;
-    margin: 50px auto;
-    border: 2px solid black;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px #888888;
-    padding: 10px;
-    text-align: center;
-    background-color: rgb(67, 66, 66);
-    color: rgb(221, 221, 221);
-}
+<!DOCTYPE html>
+<html lang="pt-br">
 
-input {
-    width: 97%;
-    margin-bottom: 10px;
-    padding: 5px;
-    font-size: 20px;
-    background-color: rgb(36, 35, 35);
-    color: rgb(221, 221, 221);
-}
+<head>
+    <link rel="stylesheet" href="light.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <script type="text/javascript" src="script.js">
+    </script>
+</head>
 
-button {
-    width: 70px;
-    height: 40px;
-    margin: 5px;
-    font-size: 20px;
-    background-color: rgb(98, 97, 97);
-    color: rgb(221, 221, 221);
-}
+<body>
+    <div class="calculator-container">
+        <h1>Calculadora Nada Científica</h1>
+        <ul id="history-list"></ul>
+        <input type="text" id="input">
+        <br>
+        <button onclick="addToInput('7')">7</button>
+        <button onclick="addToInput('8')">8</button>
+        <button onclick="addToInput('9')">9</button>
+        <button onclick="addToInput('/')">÷</button>
+        <button onclick="deleteInput('')">Back</button>
+        <button onclick="clearInput()">Clear</button>
+        <br>
+        <button onclick="addToInput('4')">4</button>
+        <button onclick="addToInput('5')">5</button>
+        <button onclick="addToInput('6')">6</button>
+        <button onclick="addToInput('*')">x</button>
+        <button onclick="addToInput('(')">(</button>
+        <button onclick="addToInput(')')">)</button>
+        <br>
+        <button onclick="addToInput('1')">1</button>
+        <button onclick="addToInput('2')">2</button>
+        <button onclick="addToInput('3')">3</button>
+        <button onclick="addToInput('-')">-</button>
+        <button onclick="addToInput('**')">x²</button>
+        <button onclick="calculateSqrt()">√</button>
+        <br>
+        <button onclick="addToInput('0')">0</button>
+        <button onclick="addToInput('.')">.</button>
+        <button onclick="addToInput('/100')">%</button>
+        <button onclick="addToInput('+')">+</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="switchTheme()">Tema</button>
+        <br>
+    </div>
+</body>
 
-h1 {
-    text-align: left;
-    font-size: 27px;
-    font-family: arial, sans-serif;
-
-}
-
-ul {
-    width: 96%;
-    margin-bottom: 10px;
-    padding: 5px;
-    font-size: 20px;
-    background-color: rgb(36, 35, 35);
-    color: rgb(221, 221, 221);
-    text-align: left;
-    list-style: none;
-    font-family: arial, sans-serif;
-}
+</html>
